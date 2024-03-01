@@ -10,7 +10,6 @@ export default function Header(){
             <button onClick={()=>navigate("/team")}>Team</button>
             <button onClick={()=>navigate("/events")}>Events</button>
             <button onClick={()=>navigate("/jobboard")}>Job Board</button>
-
         </div>
     )
 }
