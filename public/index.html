@@ -25,10 +25,64 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        font-family: Montserrat, sans-serif;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        text-decoration-line: underline;
+        text-underline-offset: 2px;
+      }
+
+      .active {
+        text-decoration-line: underline;
+        text-underline-offset: 2px;
+      }
+
+      #grad1 {
+        position:fixed;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 500px;
+        background-color: #FFA25F; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, #FFA25F , #FFFAF6);
+      }
+      </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div id="grad1">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#who are we">Who Are We?</a></li>
+        <li><a href="#meet our team">Meet Our Team</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#job opportunities">Job Opportunities</a></li>
+      </ul>
+      <div style="width:50%; font-size: 64px; padding:50px 10px; font-family: Montserrat, sans-serif;">Queen's Black Computer Science Society</div>
+      <div style="width:50%; font-size: 24px; padding:0px 10px; font-family: Roboto, sans-serif;">We are the organization that provides supportive space for black students pursuing their passion for technology.</div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
