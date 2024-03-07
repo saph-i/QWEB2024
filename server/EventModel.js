@@ -8,6 +8,6 @@ const eventSchema = new mongoose.Schema({
   color: String,
 });
 
-const itemModel = mongoose.model("Event", eventSchema);
+const eventModel = mongoose.model("Event", eventSchema);
 
 module.exports = eventModel

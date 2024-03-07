@@ -1,4 +1,4 @@
-const EventModel = require("../models/EventModel")
+const EventModel = require("EventModel")
 
 module.exports = async (req,res)=>{
     const events = await EventModel.find();

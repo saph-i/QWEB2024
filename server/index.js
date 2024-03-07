@@ -4,7 +4,6 @@ const cors = require("cors");
 const router = require("./router")
 const mongoose = require("mongoose");
 const fileUpload = require("express-fileupload");
-const fs = require("fs");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 dotenv.config();
 const app = express();
@@ -12,6 +11,7 @@ const app = express();
 app.use(express.json())
 app.use(cors());
 
+console.log(process.env.MONGO_URI)
 
 app.use(router);
 mongoose.connect(process.env.MONGO_URI).then(()=>{
