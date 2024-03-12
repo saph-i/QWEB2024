@@ -1,4 +1,3 @@
-import Header from './Header';
 export default function AboutUs() {
     return(
         <>
@@ -29,8 +28,8 @@ export default function AboutUs() {
         <div id="root" />
         <div id="grad1">
           <ul>
-            <li><a className="active" href="index.html">Who Are We?</a></li>
-            <li><a href="meet the team.html">Meet The Team</a></li>
+            <li><a className="active" href="/">Who Are We?</a></li>
+            <li><a href="/team">Meet The Team</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#job opportunities">Job Opportunities</a></li>
           </ul>

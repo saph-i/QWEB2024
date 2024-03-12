@@ -28,8 +28,8 @@ export default function Team() {
         <div id="root" />
         <div id="block">
           <ul style={{paddingBottom: '40px'}}>
-            <li><a href="index.html">Who Are We?</a></li>
-            <li><a className="active" href="meet the team.html">Meet The Team</a></li>
+            <li><a href="/">Who Are We?</a></li>
+            <li><a className="active" href="/team">Meet The Team</a></li>
             <li><a href="#events">Events</a></li>
             <li><a href="#job opportunities">Job Opportunities</a></li>
           </ul>
