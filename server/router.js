@@ -1,11 +1,12 @@
 const express = require("express");
 
 
+
+const readEventsRoute = require("./readEventRoute");
+const deleteEventsRoute = require("./deleteEventRoute");
+const createEventsRoute = require("./createEventRoute");
 const router = express.Router();
 
-const readEventsRoute = require("./readEventsRoute")
-const deleteEventsRoute = require("./deleteEventsRoute");
-const createEventsRoute = require("./createEventsRoute")
 
 router.get("/", readEventsRoute);
 router.post("/", createEventsRoute)

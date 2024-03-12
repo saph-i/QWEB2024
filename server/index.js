@@ -3,8 +3,6 @@ const dotenv = require("dotenv")
 const cors = require("cors");
 const router = require("./router")
 const mongoose = require("mongoose");
-const fileUpload = require("express-fileupload");
-const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 dotenv.config();
 const app = express();
 
