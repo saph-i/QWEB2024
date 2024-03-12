@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        font-family: Montserrat, sans-serif;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        text-decoration-line: underline;
+        text-underline-offset: 2px;
+      }
+
+      .active {
+        text-decoration-line: underline;
+        text-underline-offset: 2px;
+      }
+
+      #grad1 {
+        position:absolute;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 400px;
+        background-color: #FFA25F; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, #FFA25F , #FFFAF6);
+      }
+
+      .grid-container {
+        display: grid;
+        grid-auto-columns: minmax(0, 1fr);
+        grid-auto-flow: column;
+        padding-left: 100px;
+        padding-right: 100px;
+        column-gap: 150px;
+      }
+      .grid-item {
+        background-color: rgba(235, 235, 235, 1);
+        border-left: 10px solid rgba(194, 226, 255, 1);
+        border-bottom: 10px solid rgba(194, 226, 255, 1);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+      }
+      </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="grad1">
+      <ul>
+        <li><a class="active" href="who are we.html">Who Are We?</a></li>
+        <li><a href="meet the team.html">Meet The Team</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#job opportunities">Job Opportunities</a></li>
+      </ul>
+      <div style="width:50%; font-size: 64px; padding:50px 10px; font-family: Montserrat, sans-serif;">Queen's Black Computer Science Society</div>
+      <div style="width:50%; font-size: 24px; padding:0px 10px; font-family: Roboto, sans-serif;">We are the organization that provides supportive space for black students pursuing their passion for technology.</div>
+      <div style="width:50%; font-size: 36px; padding-top:100px; padding-bottom:30px; padding-left:50px; font-family: Montserrat, sans-serif;">Our Goals</div>
+      
+      <div class="grid-container">
+        <div class="grid-item">NETWORKING
+          <div style="font-size: 20px; padding-top:15px;text-align: left;">Connect with peers and industry professionals, bridging the gap between academia and industry. Our events and sessions aim to build a supportive network for black students in computer science, fostering diversity and innovation.</div>
+        </div>
+        <div class="grid-item">PROFESSIONAL<div>DEVELOPMENT</div>
+        <div style="font-size: 20px; padding-top:15px;text-align: left;">Sharpen your skills with interactive workshops and hands-on sessions. We're here to support your growth, providing resources, mentorship, and insights to help you thrive in the ever-evolving tech world.</div>
+        </div>
+        <div class="grid-item">COMMUNITY
+          <div style="font-size: 20px; padding-top:15px;text-align: left;">Join a safe and inclusive community for black students passionate about computer science. We celebrate achievements, foster collaboration, and create a sense of belonging beyond the screen.</div>
+        </div>
+      </div>
+      <div style="padding:20px"></div>
+    </div>
+  </body>
+</html>
