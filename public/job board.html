@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        font-family: Montserrat, sans-serif;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        text-decoration-line: underline;
+        text-underline-offset: 2px;
+      }
+
+      .active {
+        text-decoration-line: underline;
+        text-underline-offset: 2px;
+      }
+
+      #grad1 {
+        position:absolute;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 350px;
+        background-color: #C2E2FF; /* For browsers that do not support gradients */
+        background-image: linear-gradient(to right, #C2E2FF , #F6F7F8);
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 150px;
+        row-gap: 50px;
+        justify-content: center;
+      }
+      .grid-container2 {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+      .grid-item {
+        font-size: 30px;
+        font-family: Montserrat, sans-serif;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 1);
+        border: 2px solid #D2D2D2;
+        width:400px;
+      }
+      .grid-item a:hover {
+        background-color: #333333;
+      }
+      .grid-item a:link {
+        background-color: #000000;
+      }
+      </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div id="grad1">
+      <ul style="padding-bottom: 40px;">
+        <li><a href="index.html">Who Are We?</a></li>
+        <li><a href="meet the team.html">Meet The Team</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a class="active" href="job board.html">Job Opportunities</a></li>
+      </ul>
+      <div style="font-size:64px; padding-top:20px; padding-left:10px; font-family: Montserrat, sans-serif;">Available Positions</div>
+      <div style="font-size:64px; padding-left:10px; font-family: Montserrat, sans-serif;opacity: 0;">a</div>
+      
+      <div class="grid-container" style="padding-top:150px;">
+        <div class="grid-item">
+          <div style="padding:10px"></div>
+          <div style="margin:auto;width:360px;height:360px;background-color: #E2E2E2;border-radius: 15px;">
+            <div style="padding-left:30px;padding-right:30px;padding-top:80px;font-weight: bold;">Co-chair</div>
+          </div>
+          <div class="grid-container2" style="margin:auto;width:360px;padding-top:30px;font-weight: bold;font-size: 24px;">
+            <div style="padding:10px">2023/2024</div>
+            <a href="https://www.google.ca" target="_blank" style="text-decoration: none;float: right;color:white;text-align: center;padding:10px;border-radius:10000px;">APPLY</a>
+          </div>
+          <div style="padding:10px"></div>
+        </div>
+        <div class="grid-item">
+          <div style="padding:10px"></div>
+          <div style="margin:auto;width:360px;height:360px;background-color: #E2E2E2;border-radius: 15px;">
+            <div style="padding-left:30px;padding-right:30px;padding-top:80px;font-weight: bold;">Marketing Director</div>
+          </div>
+          <div class="grid-container2" style="margin:auto;width:360px;padding-top:30px;font-weight: bold;font-size: 24px;">
+            <div style="padding:10px">2023/2024</div>
+            <a href="https://www.google.ca" target="_blank" style="text-decoration: none;float: right;color:white;text-align: center;padding:10px;border-radius:10000px;">APPLY</a>
+          </div>
+          <div style="padding:10px"></div>
+        </div>
+        <div class="grid-item">
+          <div style="padding:10px"></div>
+          <div style="margin:auto;width:360px;height:360px;background-color: #E2E2E2;border-radius: 15px;">
+            <div style="padding-left:30px;padding-right:30px;padding-top:80px;font-weight: bold;">More Coming Soon</div>
+          </div>
+          <div class="grid-container2" style="margin:auto;width:360px;padding-top:30px;font-weight: bold;font-size: 24px;">
+            <div style="padding:10px">XXXX/XXXX</div>
+            <a href="" target="" style="text-decoration: none;float: right;color:white;text-align: center;padding:10px;border-radius:10000px;">APPLY</a>
+          </div>
+          <div style="padding:10px"></div>
+        </div>
+      </div>
+      <div style="padding:20px"></div>
+    </div>
+  </body>
+</html>
