@@ -2,7 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 export default function Header(){
-    const navigate = useNavigate();    
+    /*const navigate = useNavigate();    
 
     return(
         <div>
@@ -11,5 +11,6 @@ export default function Header(){
             <button onClick={()=>navigate("/events")}>Events</button>
             <button onClick={()=>navigate("/jobboard")}>Job Board</button>
         </div>
-    )
+    )*/
+    return(<></>)
 }

@@ -3,18 +3,14 @@ const dotenv = require("dotenv")
 const cors = require("cors");
 const router = require("./router")
 const mongoose = require("mongoose");
-const fileUpload = require("express-fileupload");
-const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 dotenv.config();
 const app = express();
 
 app.use(express.json())
 app.use(cors());
 
-console.log(process.env.MONGO_URI)
-
 app.use(router);
-mongoose.connect(process.env.MONGO_URI).then(()=>{
+mongoose.connect("mongodb+srv://saulwolkove:DancingStar2023$@cluster0.ln3wquy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("mongoose is working, listening on port 3001")
 })
 

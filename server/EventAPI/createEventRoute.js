@@ -1,4 +1,4 @@
-const itemModel = require("../models/itemModel")
+const itemModel = require("./EventModel")
 
 module.exports = async (req, res) =>{
     const {title}=req.body
