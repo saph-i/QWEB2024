@@ -1,3 +1,5 @@
+import Header from "./Header"
+
 export default function AboutUs() {
     return(
         <>
@@ -10,17 +12,12 @@ export default function AboutUs() {
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <title>React App</title>
-        <style dangerouslySetInnerHTML={{__html: "\n      ul {\n        list-style-type: none;\n        margin: 0;\n        padding: 0;\n        overflow: hidden;\n      }\n\n      li {\n        float: left;\n      }\n\n      li a {\n        font-family: Montserrat, sans-serif;\n        display: block;\n        color: black;\n        text-align: center;\n        padding: 14px 16px;\n        text-decoration: none;\n      }\n\n      li a:hover {\n        text-decoration-line: underline;\n        text-underline-offset: 2px;\n      }\n\n      .active {\n        text-decoration-line: underline;\n        text-underline-offset: 2px;\n      }\n\n      #grad1 {\n        position:absolute;\n        padding:0;\n        margin:0;\n        top:0;\n        left:0;\n        width: 100%;\n        height: 400px;\n        background-color: #FFA25F; /* For browsers that do not support gradients */\n        background-image: linear-gradient(to right, #FFA25F , #FFFAF6);\n      }\n\n      .grid-container {\n        display: grid;\n        grid-auto-columns: minmax(0, 1fr);\n        grid-auto-flow: column;\n        padding-left: 100px;\n        padding-right: 100px;\n        column-gap: 150px;\n      }\n      .grid-item {\n        background-color: rgba(235, 235, 235, 1);\n        border-left: 10px solid rgba(194, 226, 255, 1);\n        border-bottom: 10px solid rgba(194, 226, 255, 1);\n        padding: 20px;\n        font-size: 30px;\n        text-align: center;\n        font-family: Montserrat, sans-serif;\n      }\n      " }} />
+        <style dangerouslySetInnerHTML={{__html: "\n      ul {\n        list-style-type: none;\n        margin: 0;\n        padding: 0;\n        overflow: hidden;\n      }\n\n      li {\n        float: left;\n      }\n\n      li a {\n        font-family: Montserrat, sans-serif;\n        display: block;\n        color: black;\n        text-align: center;\n        padding: 14px 16px;\n        text-decoration: none;\n      }\n\n      li a:hover {\n        text-decoration-line: underline;\n        text-underline-offset: 2px;\n      }\n\n      .active {\n        text-decoration-line: underline;\n        text-underline-offset: 2px;\n      }\n\n      #grad1 {\n     \n        padding:0;\n        margin:0;\n        top:0;\n        left:0;\n        width: 100%;\n        height: 400px;\n        background-color: #FFA25F; /* For browsers that do not support gradients */\n        background-image: linear-gradient(to right, #FFA25F , #FFFAF6);\n      }\n\n      .grid-container {\n        display: grid;\n        grid-auto-columns: minmax(0, 1fr);\n        grid-auto-flow: column;\n        padding-left: 100px;\n        padding-right: 100px;\n        column-gap: 150px;\n      }\n      .grid-item {\n        background-color: rgba(235, 235, 235, 1);\n        border-left: 10px solid rgba(194, 226, 255, 1);\n        border-bottom: 10px solid rgba(194, 226, 255, 1);\n        padding: 20px;\n        font-size: 30px;\n        text-align: center;\n        font-family: Montserrat, sans-serif;\n      }\n      " }} />
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root" />
         <div id="grad1">
-          <ul>
-            <li><a className="active" href="/">Who Are We?</a></li>
-            <li><a href="/team">Meet The Team</a></li>
-            <li><a href="/events">Events</a></li>
-            <li><a href="/jobboard">Job Opportunities</a></li>
-          </ul>
-          <div style={{width: '50%', fontSize: '64px', padding: '50px 10px', fontFamily: 'Montserrat, sans-serif'}}>Queen's Black Computer Science Society</div>
+          
+          <div style={{width: '50%', fontSize: '64px', padding: '50px 10px', fontFamily: 'Montserrat, sans-serif'}}> <Header/>Queen's Black Computer Science Society</div>
           <div style={{width: '50%', fontSize: '24px', padding: '0px 10px', fontFamily: 'Roboto, sans-serif'}}>We are the organization that provides supportive space for black students pursuing their passion for technology.</div>
           <div style={{width: '50%', fontSize: '36px', paddingTop: '100px', paddingBottom: '30px', paddingLeft: '50px', fontFamily: 'Montserrat, sans-serif'}}>Our Goals</div>
           <div className="grid-container">
