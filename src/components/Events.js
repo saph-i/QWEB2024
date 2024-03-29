@@ -24,7 +24,7 @@ export default function Events() {
       },
     }
   );
-  return !isLoading && (
+  return (
       <div>
       <meta charSet="utf-8" />
       <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -42,7 +42,7 @@ export default function Events() {
         <div style={{fontSize: '64px', paddingTop: '20px', paddingLeft: '10px', fontFamily: 'Montserrat, sans-serif'}}><Header/>Upcoming</div>
         <div style={{fontSize: '64px', paddingLeft: '10px', fontFamily: 'Montserrat, sans-serif'}}>Events!</div>
         <div className="grid-container" style={{padding: '150px'}}>
-          {events.map((event)=>(
+          {events && events.length > 0 && !isLoading ? events.map((event)=>(
             <div key = {event._id} style={gridItemStyles}>
               <div style={{paddingLeft: '20px', paddingTop: '30px', fontWeight: 'bold', fontSize:"2em"}}>
                 {event.title}
@@ -57,7 +57,10 @@ export default function Events() {
                 <b>{event.date}</b>
               </div>
             </div>
-          ))}
+          )): <div>
+                No Events At This Time
+              </div>
+          }
         </div>
         <div style={{padding: '20px'}} />
       </div>
