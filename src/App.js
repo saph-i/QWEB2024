@@ -3,17 +3,17 @@ import Team from './components/Team';
 import AboutUs from './components/AboutUs';
 import Events from './components/Events';
 import Jobboard from './components/Jobboard';
-import Header from "./components/Header"
-
+import "./body.css";
+import AdminPanel from './components/AdminPanel';
 function App() {
   return(
     <BrowserRouter>
-      <Header/>
       <Routes>
         <Route path="/" element={<AboutUs/>}/>
         <Route path="/team" element={<Team/>}/>
         <Route path="/events" element={<Events/>}/>
         <Route path="/jobboard" element={<Jobboard/>}/>
+        <Route path="/admin" element={<AdminPanel/>}/>
 
       </Routes>
     </BrowserRouter>

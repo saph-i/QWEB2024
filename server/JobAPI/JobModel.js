@@ -3,9 +3,10 @@ const mongoose = require("mongoose")
 const jobSchema = new mongoose.Schema({
   title: String,
   date: String,
-  bio: String,
+  expiry: String,
   location: String,
-  color: String,
+  link: String,
+  bio: String
 });
 
 const jobModel = mongoose.model("Job", jobSchema);
